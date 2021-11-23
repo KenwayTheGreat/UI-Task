@@ -1,0 +1,27 @@
+.headline {
+  color: #17468f;
+}
+
+.excellent {
+  color: #00ab66;
+}
+
+.very-good {
+  color: #eed202;
+}
+
+.good {
+  color: #ff7900;
+}
+
+.fail {
+  color: #d32f2f;
+}
+
+.headline,
+.excellent,
+.very-good,
+.good,
+.fail {
+  font-family: OldSport;
+}

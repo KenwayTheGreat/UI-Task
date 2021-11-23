@@ -1,0 +1,17 @@
+.skill-text {
+  color: #112b55;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+.skill-bar {
+  background-color: #cbcbcb;
+  border-radius: 10px;
+}
+
+.skill-value {
+  position: absolute;
+  left: 45%;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+}
