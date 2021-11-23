@@ -1,12 +1,15 @@
 import SideMenu from "./Components/SideMenu";
+import Navbar from "./Components/Navbar";
+import Dashboard from "./Components/Dashboard";
+
 import "./App.css";
 
 function App() {
   return (
     <div className="app">
-      <div className="col-3">
-        <SideMenu />
-      </div>
+      <SideMenu />
+      <Navbar />
+      <Dashboard />
     </div>
   );
 }
