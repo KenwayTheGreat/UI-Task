@@ -4,10 +4,28 @@
 
 .dashboard-title {
   font-family: OldSport;
-  color: #112B55;
+  color: #112b55;
 }
 
 .experiment-list {
   font-family: OldSport;
-  color: #17468F;
+  color: #17468f;
+}
+
+.table-card {
+  width: 60px;
+}
+
+.table-title-row {
+  padding-top: 17px;
+  padding-left: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.table-title-text {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
 }

@@ -1,0 +1,15 @@
+.nav-bar {
+  display: flex;
+  background-color: #ffffff;
+  height: 10vh;
+  z-index: 1;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+.nav-icon {
+  margin: 10px;
+  border-radius: 50%;
+  border: solid 2px #fcb426;
+}

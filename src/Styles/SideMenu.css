@@ -1,0 +1,63 @@
+.side-menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  float: left;
+  width: 20vw;
+  height: 100vh;
+  background-color: #17468f;
+  color: white;
+  z-index: 5;
+  box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+.profile-section {
+  background-color: #112b55;
+}
+
+.profile-medal {
+  position: absolute;
+  top: 23%;
+  left: 65%;
+}
+
+.profile-picture {
+  background-color: white;
+  justify-self: center;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  border: solid 5px #fcb426;
+}
+
+.profile-name {
+  letter-spacing: 1.5px;
+  color: #fcb426;
+  font-family: OldSport;
+  -webkit-text-stroke: 1.25px #ffffff;
+}
+
+.btn-wrap {
+  cursor: pointer;
+}
+
+.icon {
+  height: 4.5vh;
+}
+
+.btn-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.btn-text-sel {
+  color: #fcb426;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.logo {
+  height: 20vh;
+}
