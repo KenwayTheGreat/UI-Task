@@ -1,21 +1,27 @@
 import React from "react";
 import ExperimentCard from "./ExperimentCard";
 import StudentAbility from "./StudentAbility";
-import { experiments, studentAnalysis } from "../Data/Data.js";
 import GradeCard from "./GradeCard";
 import RecentTrophies from "./RecentTrophies";
+import ExperimentRow from "./ExperimentRow";
+import {
+  experiments,
+  studentAnalysis,
+  pendingExperiments,
+} from "../Data/Data.js";
 import "../Styles/Dashboard.css";
+import classNames from "classnames";
 
 function Dashboard() {
   return (
-    <div className="dashboard-content">
+    <>
       <div className="row px-5">
         <div className="col-12 py-4 ">
           <h2 className="dashboard-title">Student Dashboard</h2>
         </div>
       </div>
       <div className="row px-5">
-        <div className="col-6">
+        <div className="col-5">
           <div className="row">
             {experiments.map((experiment, index) => {
               return <ExperimentCard key={index} experiment={experiment} />;
@@ -23,17 +29,13 @@ function Dashboard() {
           </div>
         </div>
 
-        <div className="col-3 mx-3 py-2">
-          <div className="row">
-            <div className="col-12 p-4 card">
-              {studentAnalysis.map((ability, index) => {
-                return <StudentAbility key={index} ability={ability} />;
-              })}
-            </div>
-          </div>
+        <div className="col-4 mx-3 p-3 card">
+          {studentAnalysis.map((ability, index) => {
+            return <StudentAbility key={index} ability={ability} />;
+          })}
         </div>
 
-        <div className="col-2 mx-2">
+        <div className="col-2 mx-1">
           <GradeCard />
           <RecentTrophies />
         </div>
@@ -45,12 +47,31 @@ function Dashboard() {
         </div>
       </div>
 
-      <div className="row px-5 ">
-        <div className="col-12 card">
-          <div>Card 1</div>
+      <div className={classNames("row px-5 pb-5")}>
+        <div className={classNames("col-12 card  px-5 py-3")}>
+          <div className="row px-3">
+            <div className="col-3">
+              <p className="table-title-text"> Name</p>
+            </div>
+            <div className="col-3">
+              <p className="table-title-text"> Subject</p>
+            </div>
+            <div className="col-3">
+              <p className="table-title-text"> Requirements</p>
+            </div>
+            <div className="col-3">
+              <p className="table-title-text"> Deadline</p>
+            </div>
+          </div>
+
+          {pendingExperiments.map((experiment) => (
+            <div className="row py-2">
+              <ExperimentRow row={experiment} />
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

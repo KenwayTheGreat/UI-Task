@@ -6,21 +6,21 @@ function StudentAbility({ ability }) {
   const valueStyle = {
     backgroundColor: "#17468F",
     width: ability.amount,
-    height: "15px",
+    height: "10px",
     borderRadius: "10px",
   };
 
   return (
     <>
-      <div className="row">
-        <div className={classNames("col-12", "skill-text")}>
-          <h6>{ability.ability}</h6>
+      <div className="row py-1">
+        <div className={classNames("col-12 ", "skill-text")}>
+          <h6>
+            {ability.ability}
+            {": "}
+            <span className="skill-value">{ability.amount}</span>
+          </h6>
         </div>
-      </div>
-
-      <div className="row px-3">
-        <div className={classNames("col-12", "skill-bar")}>
-          <h6 className="skill-value">{ability.amount}</h6>
+        <div className="col-12">
           <div style={valueStyle} />
         </div>
       </div>

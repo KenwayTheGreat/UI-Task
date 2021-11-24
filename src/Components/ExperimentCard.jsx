@@ -9,7 +9,7 @@ function ExperimentCard({ experiment }) {
         <div className={classNames(experiment.status, "px-2")}>
           <div className="row pt-3  ">
             <div className="col-12 text-center">
-              <h4>{experiment.type}</h4>
+              <h6>{experiment.type}</h6>
             </div>
           </div>
           <div className="row pb-2 ">

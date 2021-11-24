@@ -4,8 +4,8 @@ import { trophies } from "../Data/Data";
 function RecentTrophies() {
   return (
     <div>
-      <div className="row py-1">
-        <div className="col-12 card py-2 px-3">
+      <div className="row pt-2">
+        <div className="col-12 card py-2 px-2">
           <h5 className="headline">Recent trophies</h5>
           <div className="row">
             {trophies.map((trophy, index) => (
