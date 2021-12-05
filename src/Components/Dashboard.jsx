@@ -9,12 +9,12 @@ import {
   studentAnalysis,
   pendingExperiments,
 } from "../Data/Data.js";
-import "../Styles/Dashboard.css";
+import "../Styles/Dashboard.scss";
 import classNames from "classnames";
 
 function Dashboard() {
   return (
-    <>
+    <div className="dashboard-content">
       <div className="row px-5">
         <div className="col-12 py-4 ">
           <h2 className="dashboard-title">Student Dashboard</h2>
@@ -71,7 +71,7 @@ function Dashboard() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

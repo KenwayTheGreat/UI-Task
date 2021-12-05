@@ -1,17 +1,15 @@
 .side-menu {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  position: fixed;
   float: left;
-  width: 20vw;
+  width: 25vw;
   height: 100vh;
   border-radius: 0 15px 15px 0;
   background-color: #17468f;
   color: white;
-  z-index: 5;
   box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.35);
   -webkit-box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.35);
+  z-index: 10;
 }
 
 .profile-section {
@@ -46,6 +44,11 @@
 }
 
 .icon {
+  height: 4.5vh;
+}
+
+.icon-sel {
+  color: #fcb426;
   height: 4.5vh;
 }
 

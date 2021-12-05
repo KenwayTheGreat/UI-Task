@@ -14,8 +14,8 @@ function MenuBtn({ icon, name, selected, btn_id, setSelected }) {
         <img
           src={
             selected === btn_id
-              ? `Imgs/Icons/${icon + "-sel"}.png`
-              : `Imgs/Icons/${icon}.png`
+              ? `Imgs/Icons/${icon + "-sel"}.ico`
+              : `Imgs/Icons/${icon}.ico`
           }
           className="icon"
           alt="School Logo"
