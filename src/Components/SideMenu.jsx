@@ -11,7 +11,7 @@ function SideMenu() {
       <div className="side-menu">
         <Profile />
 
-        <div className="pb-2 pt-3">
+        <div className="my-4">
           {menu.map((cell, index) => {
             return (
               <MenuBtn
